@@ -9,7 +9,7 @@
 
 
 
- ## Liguagens 
+
 
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
@@ -32,6 +32,7 @@
 
 
 
+ ![github-user-contribution (2)](https://github.com/user-attachments/assets/13f04d5f-2872-471b-b529-47bedc023bc5)
 
 ### Redes sociais
 
@@ -41,5 +42,7 @@
 [![Gmail](https://img.shields.io/badge/Gmail-333333?style=for-the-badge&logo=gmail&logoColor=red)](mailto:daviguabiraba00@gmail.com)
 [![DIO](https://img.shields.io/badge/-%20DIO-0077B5?style=for-the-badge&logo=gitbook&logoColor=white)](https://www.dio.me/users/daviguabiraba00)
 
+
+ 
 </div>
 
