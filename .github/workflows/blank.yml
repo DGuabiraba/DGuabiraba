@@ -11,10 +11,8 @@ on:
   # run on every push on the master branch
   push:
     branches:
-    - master
+      - master
     
-  
-
 jobs:
   generate:
     permissions: 
@@ -23,22 +21,23 @@ jobs:
     timeout-minutes: 5
     
     steps:
-      # generates a snake game from a github user (<github_user_name>) contributions graph, output a svg animation at <svg_out_path>
+      # Step to generate the snake SVG from GitHub contributions
       - name: generate github-contribution-grid-snake.svg
         uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: ${{ github.com/DGuabiraba }}
+          github_user_name: DGuabiraba
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
           
-          
-      # push the content of <build_dir> to a branch
-      # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> , or as github page
-      - name: push github-contribution-grid-snake.svg to the output branch
-        uses: Platane/snk/svg-only@v3
-        with:
-          target_branch: output
-          build_dir: dist
+      # Step to push the generated SVGs to a branch
+      - name: Commit and push files
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git checkout -b output
+          git add dist/
+          git commit -m "Generate snake animation"
+          git push -u origin output
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
