@@ -1,14 +1,9 @@
 name: generate animation
 
 on:
-  # Executa automaticamente a cada 24 horas
   schedule:
     - cron: "0 */24 * * *" 
-  
-  # Permite rodar o job manualmente a qualquer momento
   workflow_dispatch:
-  
-  # Executa em cada push na branch master
   push:
     branches:
       - master
@@ -21,24 +16,29 @@ jobs:
     timeout-minutes: 5
     
     steps:
-      # Checkout do repositório
       - name: Checkout repository
         uses: actions/checkout@v3
       
-      # Gera SVG do jogo da cobra baseado nas contribuições do GitHub
       - name: Generate GitHub contribution grid snake
         uses: Platane/snk@v3
         with:
           github_user_name: DGuabiraba
           output: dist/github-contribution-grid-snake.svg
 
-      # Gera a versão dark do SVG do jogo da cobra
       - name: Generate GitHub contribution grid snake (dark mode)
         uses: Platane/snk@v3
         with:
           github_user_name: DGuabiraba
           output: dist/github-contribution-grid-snake-dark.svg
           palette: github-dark
+
+      # Verifica se o diretório dist/ existe e contém arquivos SVG
+      - name: Check for generated files
+        run: |
+          if [ ! -d "dist" ] || [ -z "$(ls -A dist)" ]; then
+            echo "No files generated in dist/. Exiting..."
+            exit 1
+          fi
 
       # Commit e push dos SVGs gerados para a branch output
       - name: Commit and push files
