@@ -33,11 +33,11 @@ jobs:
       # Commit and push the generated SVGs to the output branch
       - name: Commit and push files
         run: |
-          git config --global user.name "GitHub Action"
-          git config --global user.email "action@github.com"
+          git config --global user.name "DGuabiraba"
+          git config --global user.email "daviguabiraba00@gmail.com"
           git checkout -b output
           git add dist/
           git commit -m "Generate snake animation"
           git push -u origin output
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+          
