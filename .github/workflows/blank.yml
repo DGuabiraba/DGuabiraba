@@ -1,36 +1,46 @@
 name: generate animation
 
 on:
-  # Run automatically every 24 hours
+  # Executa automaticamente a cada 24 horas
   schedule:
     - cron: "0 */24 * * *" 
   
-  # Allows to manually run the job at any time
+  # Permite rodar o job manualmente a qualquer momento
   workflow_dispatch:
   
-  # Run on every push on the master branch
+  # Executa em cada push na branch master
   push:
     branches:
       - master
 
 jobs:
   generate:
-    permissions: 
+    permissions:
       contents: write
     runs-on: ubuntu-latest
     timeout-minutes: 5
     
     steps:
-      # Generate SVG of the snake game based on GitHub contributions
-      - name: generate github-contribution-grid-snake.svg
-        uses: Platane/snk/svg-only@v3
+      # Checkout do repositório
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      # Gera SVG do jogo da cobra baseado nas contribuições do GitHub
+      - name: Generate GitHub contribution grid snake
+        uses: Platane/snk@v3
         with:
           github_user_name: DGuabiraba
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-          
-      # Commit and push the generated SVGs to the output branch
+          output: dist/github-contribution-grid-snake.svg
+
+      # Gera a versão dark do SVG do jogo da cobra
+      - name: Generate GitHub contribution grid snake (dark mode)
+        uses: Platane/snk@v3
+        with:
+          github_user_name: DGuabiraba
+          output: dist/github-contribution-grid-snake-dark.svg
+          palette: github-dark
+
+      # Commit e push dos SVGs gerados para a branch output
       - name: Commit and push files
         run: |
           git config --global user.name "DGuabiraba"
@@ -38,6 +48,4 @@ jobs:
           git checkout -b output
           git add dist/
           git commit -m "Generate snake animation"
-          git push -u origin output
-      
-          
+          git push -u origin output --force
