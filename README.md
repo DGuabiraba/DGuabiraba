@@ -4,8 +4,20 @@
 
 [![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FDGuabiraba&label=Visitantes&labelColor=%23697689&countColor=%232ccce4)](https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FDGuabiraba)
 
-## Olá pessoal, me chamo Davi Guabiraba, estou cursando Sistema de Informação, Sou de Recife-PE
-<h2 alingn="center">  Atualmente me especializando em C# e .NET </h2>
+## Olá, eu sou Davi Guabiraba!
+
+  Desenvolvedor Back-End com foco em **C#**, **.NET**, **Java** e **bancos de dados relacionais**. Estou atualmente cursando **Sistemas de Informação** e busco consolidar minha carreira desenvolvendo soluções escaláveis para o setor empresarial, com um forte foco em acessibilidade e inovação.
+
+  Minhas habilidades incluem:
+  - **Linguagens e Frameworks**: C#, .NET, Java, Spring Boot, Vue.js, React, HTML, CSS, JavaScript
+  - **Banco de Dados**: MySQL, PostgreSQL
+  - **APIs**: Desenvolvimento de APIs RESTful
+  - **Metodologias Ágeis**: Scrum e Kanban, visando entregas eficientes e de alto valor agregado
+
+  Recentemente, atuei no projeto **Conhece Recife**, desenvolvendo aplicativos de acessibilidade, unindo tecnologia e experiência do usuário para criar impacto positivo na comunidade.
+
+  Estou em constante aprendizado e motivado a contribuir com soluções técnicas sólidas e inovadoras que promovam resultados significativos para as equipes e para o negócio.
+
 
 
 
