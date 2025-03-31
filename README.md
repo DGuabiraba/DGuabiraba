@@ -51,9 +51,6 @@ Recentemente, atuei no projeto **Conhece Recife**, desenvolvendo aplicativos ace
   <a href="https://www.instagram.com/dguabiraba/" target="_blank">
     <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
   </a>
-  <a href="https://github.com/DGuabiraba" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
   <a href="mailto:daviguabiraba00@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
