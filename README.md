@@ -43,7 +43,7 @@ Recentemente, atuei no projeto **Conhece Recife**, desenvolvendo aplicativos ace
 
 ---
 
-![snake gif](https://raw.githubusercontent.com/DGuabiraba/DGuabiraba/output/github-contribution-grid-snake.svg)
+![snake gif](https://raw.githubusercontent.com/DGuabiraba/DGuabiraba/output/github-contribution-grid-snake.gif)
 
 ## 🌎 Conecte-se comigo
 <div align="center">
