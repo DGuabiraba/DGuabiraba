@@ -43,9 +43,12 @@ Recentemente, atuei no projeto **Conhece Recife**, desenvolvendo aplicativos ace
 
 ---
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/DGuabiraba/DGuabiraba/output/dist/github-contribution-grid-snake.svg" alt="snake animation" />
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DGuabiraba/DGuabiraba/output/dist/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/DGuabiraba/DGuabiraba/output/dist/github-contribution-grid-snake-light.svg" />
+  <img alt="github contribution snake" src="https://raw.githubusercontent.com/DGuabiraba/DGuabiraba/output/dist/github-contribution-grid-snake-light.svg" />
+</picture>
+
 
 
 ## 🌎 Conecte-se comigo
