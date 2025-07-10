@@ -1,2 +1,13 @@
-theme: github-dark
-color_snake: "#00ffcc"
+# Light Theme
+- theme: github-light
+  color_snake: "#3f3f3f"
+  output: dist/github-contribution-grid-snake-light.svg
+
+# Dark Theme
+- theme: github-dark
+  color_snake: "#00ff00"
+  output: dist/github-contribution-grid-snake-dark.svg
+
+# Default (opcional)
+- theme: github-dark
+  output: dist/github-contribution-grid-snake.svg
