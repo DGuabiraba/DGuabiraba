@@ -20,8 +20,9 @@ jobs:
         with:
           github_user_name: DGuabiraba
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+              dist/github-contribution-grid-snake.svg
+              dist/github-contribution-grid-snake-dark.svg
+              dist/github-contribution-grid-snake-light.svg
 
           config_file: .github/snk-config.yaml
 
