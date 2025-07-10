@@ -30,5 +30,7 @@ jobs:
         with:
           target_branch: output
           build_dir: dist
+          keep_history: true
+          commit_message: "snake animation update"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
