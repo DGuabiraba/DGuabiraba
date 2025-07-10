@@ -16,15 +16,13 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Gerar snake SVG
-        uses: Platane/snk@v3
+        uses: Platane/snk@v2.1.0
         with:
           github_user_name: DGuabiraba
-          outputs: |
-              dist/github-contribution-grid-snake.svg
-              dist/github-contribution-grid-snake-dark.svg
-              dist/github-contribution-grid-snake-light.svg
-
-          config_file: .github/snk-config.yaml
+          svg_out_path: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake-light.svg?palette=github-light
 
       - name: Publicar na branch output
         uses: crazy-max/ghaction-github-pages@v2.1.3
