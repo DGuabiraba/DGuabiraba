@@ -1,5 +1,18 @@
-  theme: github-dark
-  color_snake: "#00ff00"
-  output: dist/github-contribution-grid-snake-dark.svg
 
+github_user_name: DGuabiraba
 
+theme: github-light
+palette:
+  - "#ebedf0"  
+  - "#9be9a8"  
+  - "#40c463"  
+  - "#30a14e"  
+  - "#216e39"  
+
+dark_theme: github-dark
+dark_palette:
+  - "#161b22"
+  - "#0e4429"
+  - "#006d32"
+  - "#26a641"
+  - "#39d353"
